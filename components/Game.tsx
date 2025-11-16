@@ -98,6 +98,12 @@ export default function Game() {
       >
         {isReady && (
           <>
+            {/* Election result image in the top-left corner of the play area */}
+            <img
+              src="/electionresult.png"
+              alt="election-result"
+              className="absolute top-2 left-2 w-48 h-48 z-20 pointer-events-none"
+            />
             <Pipes />
             <FlappyBird />
           </>
